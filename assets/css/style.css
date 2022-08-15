@@ -1,0 +1,203 @@
+@font-face {
+	font-family: cocaColaFont;
+	src: url(../fonts/lokicola.ttf);
+}
+
+.logo {
+	margin-top: 3px;
+}
+
+.logo h1 {
+	font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+	font-size: 29px;
+	margin: 0;
+	margin-top: -10px;
+	margin-bottom: -15px;
+	float: left;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 2px;
+}
+
+.logo h2 {
+	font-family: cocaColaFont;
+	font-size: 31px;
+	margin-top: -6px;
+	margin-bottom: -15px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 3px;
+	float: left;
+}
+
+.logo h3 {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: -5px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+}
+
+homepagbody {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	color: inherit;
+	transition: 0.2s;
+}
+
+main a:hover {
+	color: #BA0000;
+}
+
+
+.news-section {
+	background-image: url(../images/coke_bg.jpg) !important;
+	background-position: left bottom !important;
+	background-repeat: no-repeat !important;
+}
+
+@media (min-width: 992px) {
+	.homepageheader {
+		background-image: url(../images/coke_bg.jpg) !important;
+		background-position: right center, left bottom !important;
+		background-repeat: no-repeat, no-repeat !important;
+	}
+}
+@media (max-width: 991px) {
+	.homepageheader {
+		background-image: url(../images/coke_bg.jpg) !important;
+		background-position: left top !important;
+		background-repeat: no-repeat !important;
+	}
+}
+
+blockquote {
+	font-size: 1.15rem !important;
+	margin-top: 10px;
+	color: #a5a5a5;
+}
+figcaption {
+	color: #a5a5a5 !important;
+}
+
+.bg-rainbow {
+	color: #fff;
+	background: -webkit-gradient(linear, left top, right top, from(#140A17), color-stop(50%, #041e2a), to(#140A17));
+	background: linear-gradient(to right, #140A17 0%, #041e2a 50%, #140A17 100%);
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}
+
+.nav-link {
+	color:#ffff;
+}
+
+.nav-link:hover {
+	color: #c10303 !important;
+}
+
+.align-items-center { align-items: center!important; justify-content: center; }
+
+
+.btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.btn {
+	margin-bottom: 10px;
+}
+
+.card-logos img{
+	display: inline;
+	height:30px;
+	padding:5px;
+}
+
+.blockquote-footer::before {
+	content: "~ "!important;
+}
+
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+   0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+html {
+  overflow-y: scroll;
+}
